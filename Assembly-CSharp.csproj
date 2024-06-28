@@ -60,6 +60,7 @@
     <Analyzer Include="C:\Users\jswag\Desktop\All Things Unity\Unity Softwares\2022.3.33f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Laser.cs" />
   </ItemGroup>
