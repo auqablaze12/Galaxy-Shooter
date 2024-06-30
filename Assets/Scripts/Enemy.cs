@@ -16,12 +16,8 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //move down at 4m per sec
 
         transform.Translate(Vector3.down * _speed * Time.deltaTime);
-
-        //if bottom of screen
-        //respawn at top (with new random x pos)
 
         if (transform.position.y < -5.5f)
         {
@@ -32,19 +28,18 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //if other is Player
-        //damage player
-        //destory us
 
         if (other.tag == "Player")
         {
-            
+            Player player = other.transform.GetComponent<Player>();
+
+            if (player != null)
+            {
+                player.Damage();
+            }
+
             Destroy(this.gameObject);
         }
-
-        //if other is laser
-        //destroy laser
-        //destroy us
 
         if (other.tag == "Laser")
         {
