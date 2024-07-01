@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     private float _speed = 3.5f;
     [SerializeField]
     private GameObject _laserPrefab;
-    private Vector3 _laserOffset = new Vector3(0, 0.75f, 0);
+    private Vector3 _laserOffset = new Vector3(0, 1.1f, 0);
     [SerializeField]
     private float _fireRate = 0.5f;
     private float _canFire = -1f;
@@ -75,9 +75,6 @@ public class Player : MonoBehaviour
 
         if (_lives < 1)
         {
-            //communicate with spawn manager
-
-            //let it know to stop spawning
             _spawnManager.OnPlayerDeath();
             Destroy(this.gameObject);
         }

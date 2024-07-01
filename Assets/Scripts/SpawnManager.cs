@@ -24,15 +24,8 @@ public class SpawnManager : MonoBehaviour
  
     }
 
-    //spawn gameobjects every 5 sec
-    //create a courotine of IEnumerator -- yield events
-    //while loop
-
     IEnumerator SpawnRoutine()
     {
-        //while loop
-        //instantiate enemy prefab
-        //yeild wait 5 sec
 
         while (_stopSpawning == false)
         {
@@ -41,7 +34,6 @@ public class SpawnManager : MonoBehaviour
             newEnemy.transform.parent = _enemyContainer.transform;
             yield return new WaitForSeconds(3.0f);
         }
-
       
     }
 
