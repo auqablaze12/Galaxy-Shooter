@@ -20,8 +20,6 @@ public class UI_Manager : MonoBehaviour
 
     private GameManager _gameManager;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -65,7 +63,5 @@ public class UI_Manager : MonoBehaviour
         }
 
     }
-
-
 
 }

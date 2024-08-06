@@ -18,7 +18,6 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     private AudioClip _explosionClip;
 
-
     public void StartSpawning()
     {
         StartCoroutine(EnemySpawnRoutine());
@@ -50,8 +49,6 @@ public class SpawnManager : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(3, 8));
         }
     }
-
-
 
     public void OnPlayerDeath()
     {

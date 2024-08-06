@@ -112,9 +112,6 @@ public class Player : MonoBehaviour
         _laserShot.clip = _lazerShotAudio;
         _laserShot.Play();
 
-        //play laser audio clip
-
-
     }
 
     public void Damage()
